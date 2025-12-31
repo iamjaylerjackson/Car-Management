@@ -1,8 +1,10 @@
 # Car-Management
 
+Name: Richard Sam Jackson
+
 Car Management
 
-This is my very first app that I am trying. I hope I do a great job on it.
+This is my inventory car management. I hope I do a great job on it.
 
 What I have accomplished so far
 
@@ -16,17 +18,34 @@ Challenges faced and how I handled them
 Faced issues with HTTP methods and missing authorization headers during testing
 Resolved them by using the correct request method (POST) and adding the Authorization header with a Bearer token
 
-3. What’s next
+What’s next
 
-Create core models for the Car Rental system (Cars, Rentals, Payments)
+Create core models for the Car Rental system (Cars, Rentals)
 Build CRUD APIs for managing cars
 Protect important endpoints using JWT authentication
 
 {
-"username": "info.rsamjackson@gmail.com",
+"username": "kofi202",  
+"email": "info.rsamjackson@gmail.com",
 "password": "Password$2025"
 }
 
 http://127.0.0.1:8000/api/auth/login/
 
 http://127.0.0.1:8000/api/protected/
+
+{
+"name": "Corolla",
+"brand": "Toyota",
+"model_year": 2022,
+"license_plate": "GT-5566-24",
+"category": "sedan",
+"price_per_day": "500",
+"status": "available",
+}
+
+{
+"username": "kofi202",
+"email": "kofi202@gmail.com",
+"password": "TryOutpass2026"
+}
