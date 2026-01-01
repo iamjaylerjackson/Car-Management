@@ -1,51 +1,35 @@
-# Car-Management
+Car Rental Backend API
 
-Name: Richard Sam Jackson
+By Richard Sam Jackson
 
-Car Management
+This project is a car rental backend API built as part of my ALX backend web development capstone project.
+The goal is to build a secure and scalable backend system for managing cars and rentals.
 
-This is my inventory car management. I hope I do a great job on it.
+What i was able to complate so far
 
-What I have accomplished so far
+1. Created and configured a Django REST framework project
+2. Connected the project to a MySQL database and successfully ran migrations
+3. Implemented JWT authentication using Django SimpleJWT
+4. Successfully tested login and protected endpoints using Thunder Client
 
-Created and configured a Django REST Framework project
-Connected the project to a MySQL database and ran migrations
-Implemented JWT authentication using Django SimpleJWT
-Successfully tested login and protected endpoints using Thunder Client
+Challenges faced and how i handled them
 
-Challenges faced and how I handled them
+Faced issues with incorrect HTTP methods and missing authorization headers during testing
 
-Faced issues with HTTP methods and missing authorization headers during testing
-Resolved them by using the correct request method (POST) and adding the Authorization header with a Bearer token
+Resolved by:
 
-What’s next
+1. Using the correct request methods
+2. Adding the Authorization: Bearer token header for protected endpoints
 
-Create core models for the Car Rental system (Cars, Rentals)
-Build CRUD APIs for managing cars
-Protect important endpoints using JWT authentication
+What's next after the capstone project
 
-{
-"username": "kofi202",  
-"email": "info.rsamjackson@gmail.com",
-"password": "Password$2025"
-}
+1. Create core models for the car rental system (Cars, Rentals)
+2. Build CRUD APIs for managing cars
+3. Protect sensitive endpoints using JWT authentication
+4. Continue testing endpoints using Thunder Client
 
-http://127.0.0.1:8000/api/auth/login/
-
-http://127.0.0.1:8000/api/protected/
-
-{
-"name": "Corolla",
-"brand": "Toyota",
-"model_year": 2022,
-"license_plate": "GT-5566-24",
-"category": "sedan",
-"price_per_day": "500",
-"status": "available",
-}
-
-{
-"username": "kofi202",
-"email": "kofi202@gmail.com",
-"password": "TryOutpass2026"
-}
+Sample API Endpoints
+Login:
+POST /api/auth/login/
+Protected test endpoint:
+GET /api/protected/
